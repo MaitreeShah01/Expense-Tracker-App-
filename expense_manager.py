@@ -3,7 +3,8 @@ import pandas as pd
 from db_handler import dbhandler
 
 class Exp_Manager:
-    def __init__(self):
+    def __init__(self, user_id):
+        self.user_id = user_id
         self.db = dbhandler()
 
     def add_exp(self):
